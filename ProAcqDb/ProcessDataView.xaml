@@ -1,0 +1,26 @@
+﻿<Window x:Class="ProAcqDb.ProcessDataView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProAcqDb"
+        mc:Ignorable="d"
+        Title="ProcessDataView" Height="300" Width="620">
+    <Grid>
+
+        <ListView x:Name="PDView1">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="Date" Width="80" DisplayMemberBinding="{Binding Date}" />
+                        <GridViewColumn Header="absolute Time" Width="80" DisplayMemberBinding="{Binding absTime }" />
+                        <GridViewColumn Header="relative Time" Width="80" DisplayMemberBinding="{Binding relTime }" />
+                        <GridViewColumn Header="Tool" Width="80" DisplayMemberBinding="{Binding Tool}" />
+                        <GridViewColumn Header="Memo" Width="280" DisplayMemberBinding="{Binding Memo}" />
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>
