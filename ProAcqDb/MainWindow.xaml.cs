@@ -90,7 +90,7 @@ namespace ProAcqDb
         {
             MessageBox.Show("ProAqcDB is a small tool for visual process identification and manually process recording.\n" + "\n" +
                             "This tool can be used for measuring and recording of process properties like a relative time span with the \"Stop Watch App\" and an absolute time clock with the \"Time Stamp App\".\n" + "\n" +
-                            "It automatically writes data in a database to save process data from memo fields (c:\\ProcAcq\\).\n" + "\n" +
+                            "It automatically writes data in a database to save process data from memo fields (c:\\ProAcq\\).\n" + "\n" +
                             "The data are saved in a SQLite Database when closing the windows.\n" + "\n" +
                             "15. Jan 2017 ");
         }
