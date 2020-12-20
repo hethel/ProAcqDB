@@ -64,12 +64,7 @@ namespace ProAcqDb
             }
         }
 
-        //private void CMenu1_active()
-        //{
-        //    CMenu1.IsEnabled = true;
-        //}
-
-        // Context-Menu Time Stamp
+         // Context-Menu Time Stamp
         private void CMenu2_Click(object sender, RoutedEventArgs e)
         {
             TimeStamp timeStamp = new TimeStamp();
