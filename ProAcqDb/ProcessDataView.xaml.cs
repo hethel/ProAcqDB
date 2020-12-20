@@ -9,13 +9,13 @@ namespace ProAcqDb
     
     public partial class ProcessDataView : Window
     {
-        DBTools processDataTable = new DBTools();
+        readonly DBTools processDataTable = new DBTools();
 
         public ProcessDataView()
         {
             InitializeComponent();
 
-            PDView1.ItemsSource = processDataTable.get().AsDataView();
+            PDView1.ItemsSource = processDataTable.Get().AsDataView();
         }
     }
 }

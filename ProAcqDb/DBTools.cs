@@ -90,7 +90,7 @@ namespace ProAcqDb
         }
 
 
-        public void insert(string Date, string absTime, string relTime, string tool, string memo)
+        public void Insert(string Date, string absTime, string relTime, string tool, string memo)
         {
             try
             {
@@ -122,7 +122,7 @@ namespace ProAcqDb
 
         }
 
-        public DataTable get()
+        public DataTable Get()
         {
             DataTable processDataTable = new DataTable();
 

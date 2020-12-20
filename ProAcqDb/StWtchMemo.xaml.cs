@@ -10,7 +10,6 @@ namespace ProAcqDb
     /// </summary>
     public partial class StWtchMemo : Window
     {
-
         string sw_Date;     // sw date time stamp
         string sw_DateDB;   // DB entry date
         string sw_Memo;     // stop watch memo
@@ -22,8 +21,8 @@ namespace ProAcqDb
         DBTools sw_db;
 
         // create instance of StopWatch MainWindows
-        StopWatch sw = new StopWatch();
-        DirectoryInfo sw_di;
+        readonly StopWatch sw = new StopWatch();
+        readonly DirectoryInfo sw_di;
 
         public StWtchMemo()
         {
@@ -85,7 +84,7 @@ namespace ProAcqDb
                 {
                     sw_db.CreateDB();
                     sw_db.CreateTable();
-                    sw_db.insert(sw_DateDB, sw_absTime, sw_Time, "Stop Watch", sw_Memo);
+                    sw_db.Insert(sw_DateDB, sw_absTime, sw_Time, "Stop Watch", sw_Memo);
                 }
             }
 

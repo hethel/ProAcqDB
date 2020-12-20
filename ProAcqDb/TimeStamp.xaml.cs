@@ -78,7 +78,7 @@ namespace ProAcqDb
                 {
                     ts_db.CreateDB();
                     ts_db.CreateTable();
-                    ts_db.insert(ts_DateDB, ts_Time, "0", "Time Stamp", ts_Memo);
+                    ts_db.Insert(ts_DateDB, ts_Time, "0", "Time Stamp", ts_Memo);
                 }
             }
 
