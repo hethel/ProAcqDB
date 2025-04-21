@@ -109,13 +109,13 @@ namespace ProAcqDb
                 // create and ProAcq directory 
                 if (!di.Exists)
                 {
-                    if (MessageBox.Show("Do you want to create\n" + @"directory c:\ProAcq\" + "\nto save process properties?", "Inquiry", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                    if (MessageBox.Show("You need to create\n" + @"directory c:\ProAcq\" + "\nto save process properties.", "Inquiry", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                     {
                         di.Create();
                         Directory.SetCurrentDirectory(@"c:\ProAcq\");
                     }
                     else
-                        MessageBox.Show("You are not able to save process properties!");
+                        MessageBox.Show("You are not able to save any process properties!");
                 }
             }
 
